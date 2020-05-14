@@ -36,9 +36,10 @@ console.log(addNumbers(5, 3));
  * the returned value should look like: 'Goodbye, Andy. Have a great day.'
  * 
 */
-function sayGoodbye(/* code here */) {
-  /* code here */
+function sayGoodbye(name) {
+  return 'Goodbye, ' + name + ". Have a great day."
 }
+console.log(sayGoodbye("Andy"));
 
 /**
  * ### Challenge `temperatureCtoF`
