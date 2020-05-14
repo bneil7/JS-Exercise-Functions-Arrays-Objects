@@ -22,7 +22,7 @@ function addNumbers(num1, num2) {
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
-
+console.log('Hello World');
 
 /**
  * ### Challenge `sayGoodbye`
