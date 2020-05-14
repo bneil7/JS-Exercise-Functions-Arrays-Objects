@@ -15,6 +15,7 @@
 function addNumbers(num1, num2) {
   return num1 + num2;
 }
+console.log(addNumbers(5, 3));
 
 // ⭐️ Example Challenge end ⭐️
 
@@ -22,7 +23,6 @@ function addNumbers(num1, num2) {
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
-console.log('Hello World');
 
 /**
  * ### Challenge `sayGoodbye`
