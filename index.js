@@ -64,7 +64,7 @@ console.log(temperatureCtoF(24));
  * ### Challenge `temperatureInF`
  * 
  * @instructions
- * This function should take an a temperature and a unit (either 'F' or 'C') as arguments,
+ * This function should take a temperature and a unit (either 'F' or 'C') as arguments,
  * and return the temperature in fahrenheit, rounded to the nearest whole number. 
  * 
  * For example, if we invoke `temperatureInF`
@@ -77,10 +77,11 @@ console.log(temperatureCtoF(24));
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(tempF) {
+  return (tempF = temperatureCtoF(24) + "F")
 }
-
+console.log(temperatureInF(24));
+//// WOAH!! it looks like it worked! so basically, you take the function from the last question (temperatureCtoF()) and input the argument number 24 since you know that the function returns the formula for converting Celsius to Fahrenheit (rounded), and you just add the string "F" since this new function (temperatureInF()) is supposed to return that same formula to do that same math, but just adding "F" to the end of it.
 
 /**
  * ### Challenge `makePersonObject`
