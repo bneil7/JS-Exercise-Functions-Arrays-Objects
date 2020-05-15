@@ -77,11 +77,14 @@ console.log(temperatureCtoF(24));
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(tempF) {
-  return (tempF = temperatureCtoF(24) + "F")
+function temperatureInF(tempNum, tempUnit) {
+  if(tempUnit === "F"){
+    //do something
+  } else (tempUnit === "C")
+  return Math.round(`${tempNum * (9 / 5) + 32}C`);
 }
-console.log(temperatureInF(24));
-//// WOAH!! it looks like it worked! so basically, you take the function from the last question (temperatureCtoF()) and input the argument number 24 since you know that the function returns the formula for converting Celsius to Fahrenheit (rounded), and you just add the string "F" since this new function (temperatureInF()) is supposed to return that same formula to do that same math, but just adding "F" to the end of it.
+console.log(temperatureInF(24, "C"));
+
 
 /**
  * ### Challenge `makePersonObject`
@@ -214,22 +217,34 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   /* code here */
+  for (i = 0; i < inventory.length; i++){
+    if (i === index){
+      return `This is a ${inventory[i].car_make} ${inventory[i].car_model}.`
+    }
+  }
 }
+console.log(getCarInfoByIndex(inventory, 7));
 
 /**
  * ### Challenge `getLastCarInfo`
  * 
  * @instructions
- * getLastCarInfo takes a single argument:
+ * getLastCarInfo takes a SINGLE argument:
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getLastCarInfo returns a string in the format `This is a {car_make} {car_model}
  * 
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
- * it will return `This is a Lincoln Town Car`.
+ * it will return `This is a Dodge Ram Van 1500.`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+function getLastCarInfo(inventory) {
+  // to get the last item of an array: [array.length - 1]
+  //     inventory[inventory.length - 1]
+  //        ^            ^
+  // calling the item |  calling it for the .length of the item
+  let item = inventory[inventory.length - 1]
+  return `This is a ${item.car_make} ${item.car_model}.`
 }
+console.log(getLastCarInfo(inventory));
 
 /**
  * ### Challenge `getModelYears`
